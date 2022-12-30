@@ -144,3 +144,90 @@ buttonurl: section, as such: `[somelink](buttonurl:example.com)`. Check `/markdo
 You can delete a note using `/clear <notename>`.
 
 ## Pins
+
+Replying to a message with the `/pin` command will pin it to the chat. `/unpin` unpinns all pinned messages.
+
+## Message Deletion
+
+Sometimes, you have to delete a lot (and I mean a lot) of message at once. That's where <code>/purge</code> comes in.
+
+Replying to a message with `/purge` will delete **all** messages which have been sent after this certain message.
+If you provide an additional integer (`/purge <x>`), it will delete `x` messages.
+
+**NOTE**: The bot can't delete messages sent by other bot accounts due to limitations in the Telegram API.
+
+## Warnings
+
+Warnings allow you, as an admin, to warn users if they missbehave. After a certain amount of warnings (defaults to 3)
+they will get banned from the group.
+
+### Basics
+
+The `/warns <userhandle>` command lists a user's warns. Warnings can be resetete using `/resetwarn <userhandle>`.
+
+The warning limit can be changed using the `/warnlimit <int>` command.
+
+Using `/strongwarn <on/yes/off/no>` it is possible to kick users when they exceed the warning limit (instead of banning
+them). Defaults to on.
+
+### Manual Warns
+
+`/warn <userhandle>` warns a user. It can be removed by clicking the inline button below the confirmation message the
+bot sends.
+
+### Automatic Warns
+
+Manually warning users can be a real hazzle. With warning filters the bot can do this automatically for you!
+
+`/addwarn <keyword> <reply message>` sets a warning filter on a certain keyword. If you want your keyword to be a
+sentence, encompass it with quotes, as such: `/addwarn "very angry" This is an angry user. `
+
+`/nowarn <keyword>` stops a warning filter.
+
+## Welcome/Goodbye messages
+
+**NOTE**: The commands in this section work identically for welcome-messages and goodbye-messages, so e.g. `/setwelcome`
+works for welcome-messages and `/setgoodbye` for goodbye-messages.
+
+Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages to be individually
+generated, like the default welcome message is, you can use these variables:
+
+- _{first}_: this represents the user's first name
+- _{last}_: this represents the user's last name. Defaults to first name if user has no last name.
+- _{fullname}_: this represents the user's full name. Defaults to first name if user has no last name.
+- _{username}_: this represents the user's username. Defaults to a mention of the user's first name if has no username.
+- _{mention}_: this simply mentions a user - tagging them with their first name.
+- _{id}_: this represents the user's id
+- _{count}_: this represents the user's member number.
+- _{chatname}_: this represents the current chat name.
+
+Each variable MUST be surrounded by _{}_ to be replaced.
+Welcome messages also support markdown, so you can make any elements bold/italic/code/links. Buttons are also supported,
+so you can make your welcomes look awesome with some nice intro buttons.
+To create a button linking to your rules, use this: `[Rules](buttonurl://t.me/karatekbot?start=group_id)`. Simply
+replace `group_id` with your group's id, which can be obtained via `/id`, and you're good to go. Note that group ids are
+usually preceded by a - sign; this is required, so please don't remove it.
+If you're feeling fun, you can even set images/gifs/videos/voice messages as the welcome message by replying to the
+desired media, and calling `/setwelcome`. If you need more help, see `/welcomehelp`.
+
+You can toggle welcome messages by using `/welcome <on/off>`. Running `/welcome` without arguments will print the
+current welcome settings. Executing `/welcome noformat`  shows the current welcome settings, without the formatting -
+useful to recycle your welcome messages!
+
+Using `/resetwelcome` and `/resetgoodbye` resets to the default messages.
+
+If a lot of members join your group, all the welcome message can spam your group quite quickly.
+Using `/cleanwelcome <on/off>` it is possible to make the bot "clean up" old welcome messages.
+When enabled, the bot will try to delete the last welcome message once a new member joins.
+
+## Reports
+
+Users are able to report messages to the admins. Once a message is reported, the bot will send a PM to all the group
+admins.
+If you don't wan't to get all the reports to your inbox, use the `/reports <on/off>` in a private chat with the bot to
+opt out of / into this feature. Using `/reports` without any arguments returns the current setting.
+
+## Invitelink
+
+The `/invitelink` command returns the groups invite link.
+

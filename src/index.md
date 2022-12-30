@@ -2,8 +2,8 @@
 home: true
 heroImage: https://karatek.net/logo.png
 tagline: Open Source Telegram Group Management Bot written in Python
-<!--actionText: Quick Start →
-actionLink: /guide/-->
+actionText: Add it to your group!
+actionLink: https://t.me/karatekbot
 
 features:
 - title: Global Bans
