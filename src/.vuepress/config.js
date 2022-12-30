@@ -42,8 +42,8 @@ module.exports = {
                 link: '/admins/'
             },
             {
-                text: 'VuePress',
-                link: 'https://v1.vuepress.vuejs.org'
+                text: 'Karatek',
+                link: 'https://karatek.net'
             }
         ],
         sidebar: {
