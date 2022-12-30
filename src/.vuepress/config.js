@@ -42,7 +42,7 @@ module.exports = {
                 link: '/admins/'
             },
             {
-                text: 'Karatek',
+                text: 'KaratekHD',
                 link: 'https://karatek.net'
             }
         ],
