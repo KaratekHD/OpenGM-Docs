@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'OpenGM Documentation',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,12 +34,12 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Group Members',
+        link: '/users/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Group Admins',
+        link: '/admins/'
       },
       {
         text: 'VuePress',

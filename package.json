@@ -1,19 +1,20 @@
 {
-  "name": "OpenGM",
-  "version": "0.0.1",
-  "description": "Open Source Telegram Group Management Bot written in Python",
-  "main": "index.js",
-  "authors": {
-    "name": "KaratekHD",
-    "email": "kontakt@karatek.net"
-  },
-  "repository": "https://github.com/KaratekHD/Nemesis",
-  "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.5.3"
-  }
+    "name": "OpenGM",
+    "version": "0.0.1",
+    "description": "Open Source Telegram Group Management Bot written in Python",
+    "main": "index.js",
+    "authors": {
+        "name": "KaratekHD",
+        "email": "kontakt@karatek.net"
+    },
+    "repository": "https://github.com/KaratekHD/Nemesis",
+    "scripts": {
+        "dev": "vuepress dev src",
+        "build": "vuepress build src"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "node-sass": "^8.0.0",
+        "vuepress": "^1.5.3"
+    }
 }

@@ -1,15 +1,16 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://karatek.net/logo.png
 tagline: Open Source Telegram Group Management Bot written in Python
-actionText: Quick Start →
-actionLink: /guide/
+<!--actionText: Quick Start →
+actionLink: /guide/-->
+
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: Global Bans
+  details: Our team of gloabl moderators bans nasty spamers before they can reaych your groups.
+- title: Antiflood
+  details: Automatically take action when a user is spaming your group.
+- title: Reputation
+  details: Let users vote on each others messages!
 footer: Made by KaratekHD with ❤️
 ---
